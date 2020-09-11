@@ -1,0 +1,11 @@
+=webfont($font)
+  @font-face
+    font-weight: normal
+    font-sytle: normal
+    font-family: '#{$font}'
+    src: url('fonts/#{$font}.ttf') format('truetype'), url('fonts/#{$font}.svg##{$font}') format('svg'), url('fonts/#{$font}.eot'), url('fonts/#{$font}.woff') format('woff'), url('fonts/#{$font}.otf') format('opentype')
+
+@mixin background($img)
+  background-image: url(../img/#{$img})
+  background-position: center
+  background-repeat: no-repeat

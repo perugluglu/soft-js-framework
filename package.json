@@ -1,0 +1,25 @@
+{
+  "name": "softjs-framework",
+  "version": "1.1.0",
+  "description": "![](https://bitbucket.org/peruglugluinteractive/20200627-softjs-framework/raw/3c8e48d6b5b79dde8d9ceec8f52715aab7800b98/src/soft-lib/assets/img/softjs-framework.png)",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ederfernandes@bitbucket.org/peruglugluinteractive/20200627-softjs-framework.git"
+  },
+  "author": "Perugluglu Interactive",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/peruglugluinteractive/20200627-softjs-framework#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {}
+}

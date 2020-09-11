@@ -1,0 +1,153 @@
+@-webkit-keyframes pulse-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulse-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+body#soft main #soft-pages .soft-current-page#cover .bg.bg-top-left {
+  background-image: url(../img/default/em/bg-cover-top-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#cover .bg.bg-top-right {
+  background-image: url(../img/default/em/bg-cover-top-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#cover .bg.bg-bottom-left {
+  background-image: url(../img/default/em/bg-cover-bottom-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#cover .bg.bg-bottom-right {
+  background-image: url(../img/default/em/bg-cover-bottom-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#cover .logo-disciplina {
+  background-image: url(../img/default/fis/logo-disciplina.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#cover .title .btn-start p i {
+  background-image: url(../img/default/em/icon-btn-start.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+body#soft main #soft-pages .soft-current-page#gameplay {
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden; }
+  body#soft main #soft-pages .soft-current-page#gameplay .bg {
+    background-color: #ff0;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  body#soft main #soft-pages .soft-current-page#gameplay .board {
+    background-color: #f00; }
+
+body#soft main #soft-pages .soft-current-page#video {
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden; }
+  body#soft main #soft-pages .soft-current-page#video .bg {
+    background-color: #ff0;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  body#soft main #soft-pages .soft-current-page#video .bg-play {
+    background-color: #000;
+    position: absolute;
+    max-width: 1000px;
+    max-height: 610px;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
+  body#soft main #soft-pages .soft-current-page#video .btn-play {
+    background-color: #f00;
+    position: absolute;
+    max-width: 180px;
+    max-height: 180px;
+    width: 25%;
+    height: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5); }
+    body#soft main #soft-pages .soft-current-page#video .btn-play:hover {
+      -webkit-transform: scale(1.2) !important;
+          -ms-transform: scale(1.2) !important;
+              transform: scale(1.2) !important;
+      -webkit-filter: brightness(1.6) !important;
+              filter: brightness(1.6) !important; }
+    body#soft main #soft-pages .soft-current-page#video .btn-play:active {
+      -webkit-transform: scale(1.1) !important;
+          -ms-transform: scale(1.1) !important;
+              transform: scale(1.1) !important;
+      -webkit-filter: brightness(1.1) !important;
+              filter: brightness(1.1) !important; }
+  body#soft main #soft-pages .soft-current-page#video iframe {
+    opacity: 0;
+    visibility: hidden; }

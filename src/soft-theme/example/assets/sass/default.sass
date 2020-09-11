@@ -1,0 +1,242 @@
+@charset "utf-8"
+
+@import animate
+@import mixin
+
+@include webfont('open-sans-regular')
+@include webfont('tempo-std-heavy-condensed')
+
+.pulse-scale
+  animation-name: pulse-scale
+  animation-duration: 1.2s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+.rotate
+  animation-name: rotate
+  animation-duration: 7s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+body#soft
+  position: absolute
+  width: 100%
+  height: 100%
+
+  *
+    font-family: open-sans-regular, 'Arial', sans-serif
+    font-size: 16px
+    line-height: 26px
+
+  .btn
+    cursor: pointer
+
+    &.inactive
+      pointer-events: none !important
+
+  .ease, .ease *
+    transition: all ease-in-out 0.1s
+
+  main
+    background-color: #fff
+    position: inherit
+    width: inherit
+    height: inherit
+    overflow: hidden
+
+    #soft-loader
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      margin: auto
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 10%
+      height: 20%
+      max-width: 85px
+      max-height: 85px
+
+      div
+        @include background('default/preloader.gif')
+        background-position: center
+        height: 100%
+        width: 100%
+        position: absolute
+
+    #soft-pages
+      position: inherit
+      width: inherit
+      height: inherit
+      overflow: hidden
+      z-index: 1
+
+      .soft-current-page
+        position: inherit
+        width: inherit
+        height: inherit
+        overflow: hidden
+
+        &#splash-screen
+
+          .logo-richmond
+            position: absolute
+            width: 60%
+            height: 13%
+            margin: auto
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            max-width: 300px
+            max-height: 55px
+
+            div
+              position: absolute
+              width: 100%
+              height: 100%
+              top: -50px
+              opacity: 0
+              visibility: hidden
+
+              &.logo
+                @include background('default/richmond-logo/logo.png')
+                width: 200%
+                left: -50%
+                margin-left: 0
+                top: 0
+                transform: scale(0)
+                z-index: 1
+
+              &.r
+                @include background('default/richmond-logo/r.png')
+
+              &.i
+                @include background('default/richmond-logo/i.png')
+
+              &.c
+                @include background('default/richmond-logo/c.png')
+
+              &.h
+                @include background('default/richmond-logo/h.png')
+
+              &.m
+                @include background('default/richmond-logo/m.png')
+
+              &.o
+                @include background('default/richmond-logo/o.png')
+
+              &.n
+                @include background('default/richmond-logo/n.png')
+
+              &.d
+                @include background('default/richmond-logo/d.png')
+
+        &#cover
+          overflow: auto
+
+          .bg
+            position: absolute
+            width: 100%
+            height: 100%
+            transform: scale(2)
+
+            &.bg-top-left
+              background-position: top left !important
+
+            &.bg-top-right
+              background-position: top right !important
+
+            &.bg-bottom-left
+              background-position: bottom left !important
+
+            &.bg-bottom-right
+              background-position: bottom right !important
+
+          .detail-logo-colecao
+            @include background('default/detail-logo-colecao.png')
+            background-position: bottom right
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 100%
+            transform: scale(2)
+            transform-origin: 0 -120%
+
+          .logo-colecao
+            @include background('default/logo-colecao.png')
+            background-position: bottom right
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 100%
+
+          .logo-disciplina
+            background-position: bottom left !important
+            position: absolute
+            width: 100%
+            height: 100%
+            transform: scale(0)
+            opacity: 0
+            visibility: hidden
+            transform-origin: bottom left
+
+          .title
+            position: absolute
+            right: 30%
+            top: -10%
+            bottom: 0
+            margin: auto
+            width: 100%
+            text-align: right
+            opacity: 0
+            visibility: 0
+            display: flex
+            justify-content: flex-end
+            align-items: center
+
+            p
+              color: #042954
+
+            .btn-start
+              display: inline-block
+              padding-right: 75px
+              display: flex
+              align-items: center
+              justify-content: center
+
+              &:hover
+                filter: brightness(1.4)
+                transform: scale(1.1)
+
+                p
+                  i
+                    right: -10px
+
+              &:active
+                filter: brightness(1.4)
+                transform: scale(1.05)
+
+                p
+                  i
+                    right: -10px
+
+              p
+                font-family: tempo-std-heavy-condensed, 'Arial', sans-serif
+                font-size: 60px
+                line-height: 65px
+                text-align: left
+                white-space: nowrap
+
+                i
+                  display: block
+                  position: absolute
+                  width: 60px
+                  height: 60px
+                  top: 10px
+                  right: 0
+                  bottom: 0
+                  margin: auto
+
+        &#gameplay
