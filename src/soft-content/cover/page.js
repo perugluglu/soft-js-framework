@@ -5,15 +5,14 @@ var softPage = {
 
     pageLoader: {
         loaderShowMethod: 'theme.showLoader()',
-        singularFiles: {
+        loaderFiles: {
             files: [
                 //{ 'type': 'IMAGE', 'source': 'soft-theme/richmond/assets/img/default/em/bg-cover-bottom-left.png', 'size': 2071 },
 
                 // not supported on IE
                 // { 'type': 'AUDIO', 'sources': { 'mp3': { 'source': 'soft-theme/example/assets/medias/click.mp3', 'size': 4096 }}}
             ]
-        },
-        animationSequenceImages: []
+        }
     },
 
     pageCode: '<h1>Cover</h1>',

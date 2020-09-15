@@ -1,8 +1,8 @@
 // Soft methods
 var soft = {
 
-	version: '1.1.2',
-	lastUpdate: '08/09/2020',
+	version: '1.1.3',
+	lastUpdate: '14/09/2020',
 
 	// Variables
 	vars: {
@@ -380,11 +380,11 @@ var soft = {
 		$('body#soft > main > section#soft-pages *').remove();
 		$('body#soft > main > section#soft-pages').append('<div id="' + soft.vars.pageId + '" class="soft-current-page ' + soft.vars.pageClass + '" ' + soft.vars.pageAttribute + '></div>');
 
-		var totalSequenceImages = softContent[soft.vars.currentLanguageIndex].contentPages[soft.vars.pageIndex].pageContent.pageLoader.animationSequenceImages.length;
-		if (totalSequenceImages > 0)
-			soft.addSequenceImagesLoad();
-		else {
+		if (soft.vars.initApp == true) {
 			setTimeout(soft.themeInit, 1000);
+		}
+		else {
+			soft.pageLoader(soft.vars.pageIndex);
 		}
 
 	},
@@ -421,7 +421,7 @@ var soft = {
 
 		console.warn('Page loaded: ' + softContent[soft.vars.currentLanguageIndex].contentPages[loadPageIndex].pageTitle);
 		
-		var totalPageFiles = softContent[soft.vars.currentLanguageIndex].contentPages[loadPageIndex].pageContent.pageLoader.singularFiles.files.length;
+		var totalPageFiles = softContent[soft.vars.currentLanguageIndex].contentPages[loadPageIndex].pageContent.pageLoader.loaderFiles.files.length;
 		
 		if (totalPageFiles > 0) {
 
@@ -430,10 +430,12 @@ var soft = {
 			
 			$.html5Loader({
 				
-				filesToLoad: softContent[soft.vars.currentLanguageIndex].contentPages[loadPageIndex].pageContent.pageLoader.singularFiles,
+				filesToLoad: softContent[soft.vars.currentLanguageIndex].contentPages[loadPageIndex].pageContent.pageLoader.loaderFiles,
 				
 				onUpdate: function (percentage) {
-					soft.percentPageLoaded = percentage + '%';
+					if (softConfig.global.showLoaderPercentNumber == true) {
+						soft.percentPageLoaded = percentage + '%';
+					}
 					if (percentage >= 100) {
 						console.log(totalPageFiles + ' loaded file(s).\n\n');
 					}

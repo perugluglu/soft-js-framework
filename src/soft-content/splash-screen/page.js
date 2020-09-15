@@ -5,13 +5,12 @@ var softPage = {
 
     pageLoader: {
         loaderShowMethod: 'theme.showLoader()',
-        singularFiles: {
+        loaderFiles: {
             files: [
-                { 'type': 'IMAGE', 'source': 'soft-theme/example/assets/img/default/preloader.gif', 'size': 323350 },
-                { 'type': 'IMAGE', 'source': 'soft-theme/example/assets/img/default/capa2.png', 'size': 4649857 },
+                { 'type': 'IMAGE', 'source': 'soft-theme/richmond/assets/img/default/preloader.gif', 'size': 323350 },
+                { 'type': 'IMAGE', 'source': 'soft-theme/richmond/assets/img/default/capa2.png', 'size': 4649857 },
             ]
-        },
-        animationSequenceImages: []
+        }
     },
 
     pageCode: '\
