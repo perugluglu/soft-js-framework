@@ -7,10 +7,16 @@ body#soft
     &.invert-color
         filter: invert(1)
 
-    &.events-none
-        pointer-events: none
+    &.events-none, &.events-none *
+        pointer-events: none !important
 
     .soft-inactive
         pointer-events: none !important
 
     & > main
+
+        #soft-pages
+
+            .soft-page
+
+                &.soft-current-page

@@ -1,0 +1,2783 @@
+@-webkit-keyframes pulse-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulse-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(3px, 0, 0);
+            transform: translate3d(3px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0); } }
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(3px, 0, 0);
+            transform: translate3d(3px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0); } }
+
+@-webkit-keyframes scale-rotate {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  50% {
+    -webkit-transform: scale(1.3) rotate(5deg);
+            transform: scale(1.3) rotate(5deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); } }
+
+@keyframes scale-rotate {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  50% {
+    -webkit-transform: scale(1.3) rotate(5deg);
+            transform: scale(1.3) rotate(5deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); } }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "AptiferSansLTPro-Light";
+  src: url("fonts/AptiferSansLTPro-Light.ttf") format("truetype"), url("fonts/AptiferSansLTPro-Light.svg#AptiferSansLTPro-Light") format("svg"), url("fonts/AptiferSansLTPro-Light.eot"), url("fonts/AptiferSansLTPro-Light.woff") format("woff"), url("fonts/AptiferSansLTPro-Light.otf") format("opentype"); }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "AptiferSansLTPro-Bold";
+  src: url("fonts/AptiferSansLTPro-Bold.ttf") format("truetype"), url("fonts/AptiferSansLTPro-Bold.svg#AptiferSansLTPro-Bold") format("svg"), url("fonts/AptiferSansLTPro-Bold.eot"), url("fonts/AptiferSansLTPro-Bold.woff") format("woff"), url("fonts/AptiferSansLTPro-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "AptiferSansLTPro-Black";
+  src: url("fonts/AptiferSansLTPro-Black.ttf") format("truetype"), url("fonts/AptiferSansLTPro-Black.svg#AptiferSansLTPro-Black") format("svg"), url("fonts/AptiferSansLTPro-Black.eot"), url("fonts/AptiferSansLTPro-Black.woff") format("woff"), url("fonts/AptiferSansLTPro-Black.otf") format("opentype"); }
+
+.pulse-scale {
+  -webkit-animation-name: pulse-scale;
+          animation-name: pulse-scale;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.pulse-scale-2 {
+  -webkit-animation-name: pulse-scale;
+          animation-name: pulse-scale;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.pulse-scale-3 {
+  -webkit-animation-name: pulse-scale;
+          animation-name: pulse-scale;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.pulse-scale-4 {
+  -webkit-animation-name: pulse-scale;
+          animation-name: pulse-scale;
+  -webkit-animation-duration: 0.95s;
+          animation-duration: 0.95s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.rotate {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.shake {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
+
+.scale-rotate {
+  -webkit-animation-name: scale-rotate;
+          animation-name: scale-rotate;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
+
+body#soft {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  body#soft * {
+    font-family: AptiferSansLTPro-Light, 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #456959; }
+  body#soft .scroll-y {
+    overflow-y: auto;
+    overflow-x: hidden; }
+  body#soft .scroll-x {
+    overflow-x: auto;
+    overflow-y: hidden; }
+  body#soft .btn {
+    cursor: pointer; }
+    body#soft .btn.inactive {
+      pointer-events: none !important; }
+    body#soft .btn:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-filter: brightness(1.1);
+              filter: brightness(1.1); }
+    body#soft .btn:active {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-filter: brightness(1.05);
+              filter: brightness(1.05); }
+  body#soft .ease, body#soft .ease * {
+    -webkit-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.1s; }
+  body#soft main {
+    background-color: #fff;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    overflow: hidden; }
+    body#soft main #soft-loader {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 10%;
+      height: 20%;
+      max-width: 60px;
+      max-height: 60px; }
+      body#soft main #soft-loader div {
+        background-image: url(../img/loader.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        position: absolute; }
+    body#soft main #soft-pages {
+      position: inherit;
+      width: inherit;
+      height: inherit;
+      overflow: hidden;
+      z-index: 1; }
+      body#soft main #soft-pages .wrap-scaled .video-bg {
+        background-image: url(../img/loader-video.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 8%;
+        background-color: #fff;
+        height: 672px;
+        position: absolute;
+        width: 92%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 10px solid #fff;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        outline: 3px solid #fff;
+        outline-offset: 20px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+                transform: scale(1.5); }
+      body#soft main #soft-pages .wrap-scaled #video {
+        position: absolute;
+        width: 92%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 10px solid transparent;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden; }
+      body#soft main #soft-pages .soft-page {
+        display: none;
+        opacity: 0;
+        visibility: hidden; }
+      body#soft main #soft-pages .soft-current-page {
+        position: inherit;
+        width: inherit;
+        height: inherit;
+        overflow: hidden;
+        display: block; }
+        body#soft main #soft-pages .soft-current-page #hud-include {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          pointer-events: none; }
+          body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled {
+            top: 0 !important;
+            left: 0 !important; }
+            body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars {
+              background-image: url(../img/../img/bg-pillars.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              right: 213px;
+              bottom: 219px;
+              width: 280px;
+              height: 150px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding: 25px 0 0 32px;
+              font-size: 22px;
+              -webkit-transform: scale(0);
+                  -ms-transform: scale(0);
+                      transform: scale(0);
+              -webkit-transform-origin: 0 0;
+                  -ms-transform-origin: 0 0;
+                      transform-origin: 0 0;
+              opacity: 0;
+              visibility: hidden; }
+              body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar {
+                font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+                position: absolute;
+                font-size: 30px;
+                text-align: center; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.pillar-1 {
+                  background-image: url(../img/../img/pillar-1.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 58px;
+                  height: 64px;
+                  top: 54px;
+                  left: 28px;
+                  text-indent: -3px;
+                  line-height: 66px; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.pillar-2 {
+                  background-image: url(../img/../img/pillar-2.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 58px;
+                  height: 62px;
+                  top: 54px;
+                  left: 101px;
+                  line-height: 66px; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.pillar-3 {
+                  background-image: url(../img/../img/pillar-3.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 61px;
+                  height: 66px;
+                  top: 51px;
+                  left: 170px;
+                  text-indent: 2px;
+                  line-height: 72px; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.hit {
+                  -webkit-transform: none !important;
+                      -ms-transform: none !important;
+                          transform: none !important;
+                  -webkit-filter: brightness(0);
+                          filter: brightness(0);
+                  -webkit-animation: none;
+                          animation: none; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.drop {
+                  -webkit-transform: none !important;
+                      -ms-transform: none !important;
+                          transform: none !important;
+                  -webkit-animation: none;
+                          animation: none; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar i {
+                  position: absolute;
+                  width: 64px;
+                  height: 80px;
+                  top: -8px;
+                  left: -4px; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.escola i {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/escola.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.estudante i {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/estudante.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page #hud-include .pillars-scaled .pillars .pillar.familia i {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/familia.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled {
+            top: 100% !important;
+            left: 0 !important; }
+            body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar {
+              background-image: url(../img/../img/bg-avatar.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 480px;
+              right: 550px;
+              width: 200px;
+              height: 190px; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .mask {
+                position: absolute;
+                width: 210px;
+                height: 260px;
+                left: -10px;
+                bottom: 18px;
+                overflow: hidden; }
+                body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .mask i {
+                  width: 100%;
+                  height: 250px;
+                  display: block;
+                  position: relative;
+                  bottom: -280px;
+                  left: 12px; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-1 i {
+                background-image: url(../img/../img/avatar/avatar-1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-2 i {
+                background-image: url(../img/../img/avatar/avatar-2.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-3 i {
+                background-image: url(../img/../img/avatar/avatar-3.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-4 i {
+                background-image: url(../img/../img/avatar/avatar-4.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-5 i {
+                background-image: url(../img/../img/avatar/avatar-5.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar.avatar-6 i {
+                background-image: url(../img/../img/avatar/avatar-6.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .ballon {
+                background-image: url(../img/../img/ballon.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                width: 300px;
+                height: 120px;
+                top: 30px;
+                left: 100px;
+                -webkit-transform: scale(0);
+                    -ms-transform: scale(0);
+                        transform: scale(0);
+                -webkit-transform-origin: 0 50%;
+                    -ms-transform-origin: 0 50%;
+                        transform-origin: 0 50%;
+                opacity: 0;
+                -webkit-transition: all ease-in-out 0.3s;
+                -o-transition: all ease-in-out 0.3s;
+                transition: all ease-in-out 0.3s; }
+                body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .ballon p {
+                  line-height: 18px;
+                  font-size: 14px;
+                  position: absolute;
+                  -webkit-transform: translate(-50%, -50%);
+                      -ms-transform: translate(-50%, -50%);
+                          transform: translate(-50%, -50%);
+                  left: 58%;
+                  top: 42%;
+                  width: 195px; }
+                  body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .ballon p b {
+                    font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+                    font-size: inherit;
+                    line-height: inherit; }
+                body#soft main #soft-pages .soft-current-page #hud-include .avatar-scaled .avatar .ballon.show {
+                  -webkit-transform: scale(1.4);
+                      -ms-transform: scale(1.4);
+                          transform: scale(1.4);
+                  opacity: 1; }
+          body#soft main #soft-pages .soft-current-page #hud-include .score-scaled {
+            top: 100% !important; }
+            body#soft main #soft-pages .soft-current-page #hud-include .score-scaled .score {
+              background-image: url(../img/../img/score.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 305px;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 200px;
+              height: 68px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              padding: 17px 0 0 20px;
+              font-size: 22px;
+              opacity: 0;
+              visibility: hidden; }
+              body#soft main #soft-pages .soft-current-page #hud-include .score-scaled .score span {
+                font-family: AptiferSansLTPro-Black, 'Arial', sans-serif;
+                display: inline-block;
+                width: 75px;
+                text-align: center;
+                font-size: 35px; }
+          body#soft main #soft-pages .soft-current-page #hud-include .box-scaled {
+            top: 100% !important;
+            left: 100% !important;
+            z-index: 9999; }
+            body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box {
+              background-image: url(../img/../img/bg-box.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 450px;
+              left: 302px;
+              width: 190px;
+              height: 170px;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask {
+                position: absolute;
+                top: -500px;
+                left: 0px;
+                width: 205px;
+                height: 630px;
+                overflow: hidden;
+                pointer-events: none; }
+                body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask.no-overflow {
+                  overflow: visible !important; }
+                body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items {
+                  background-image: url(../img/../img/bg-items-box.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  position: absolute;
+                  top: 640px;
+                  left: -20px;
+                  width: 190px;
+                  height: 550px;
+                  -webkit-transform: rotate(3deg) scale(0.7);
+                      -ms-transform: rotate(3deg) scale(0.7);
+                          transform: rotate(3deg) scale(0.7);
+                  -webkit-transform-origin: 60% 100%;
+                      -ms-transform-origin: 60% 100%;
+                          transform-origin: 60% 100%;
+                  pointer-events: all; }
+                  body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items:before {
+                    background-image: url(../img/../img/box-cover.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: block;
+                    content: "";
+                    width: 152px;
+                    height: 30px;
+                    position: absolute;
+                    top: -5px;
+                    left: -25px;
+                    right: -20px;
+                    margin: auto;
+                    -webkit-transform: rotate(-11deg);
+                        -ms-transform: rotate(-11deg);
+                            transform: rotate(-11deg); }
+                  body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items p {
+                    font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    text-align: center;
+                    margin: 30px 0 0 42px;
+                    -webkit-transform: rotate(-3deg);
+                        -ms-transform: rotate(-3deg);
+                            transform: rotate(-3deg); }
+                  body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items:after {
+                    display: block;
+                    content: "";
+                    width: 110px;
+                    height: 30px;
+                    position: absolute;
+                    top: 55px;
+                    left: 40px;
+                    right: 0;
+                    margin: auto;
+                    z-index: 99;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25b), to(rgba(255, 194, 91, 0)));
+                    background-image: -webkit-linear-gradient(top, #ffc25b, rgba(255, 194, 91, 0));
+                    background-image: -o-linear-gradient(top, #ffc25b, rgba(255, 194, 91, 0));
+                    background-image: linear-gradient(to bottom, #ffc25b, rgba(255, 194, 91, 0));
+                    pointer-events: none;
+                    -webkit-transition: all ease-in-out 0.1s;
+                    -o-transition: all ease-in-out 0.1s;
+                    transition: all ease-in-out 0.1s; }
+                  body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y {
+                    height: 470px;
+                    width: 150px;
+                    -webkit-transform: rotate(1deg);
+                        -ms-transform: rotate(1deg);
+                            transform: rotate(1deg);
+                    -webkit-transform-origin: 0 0;
+                        -ms-transform-origin: 0 0;
+                            transform-origin: 0 0;
+                    margin-left: 35px; }
+                    body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul {
+                      padding: 10px 0 30px; }
+                      body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul li {
+                        background-color: #E3A640;
+                        display: inline-block;
+                        -webkit-border-radius: 100px;
+                                border-radius: 100px;
+                        width: 70px;
+                        height: 70px;
+                        margin: 5px 0 5px 48px;
+                        -webkit-box-sizing: border-box;
+                           -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                        border: 2px dashed #fff;
+                        position: relative;
+                        -webkit-transition: all ease-in-out 0.1s;
+                        -o-transition: all ease-in-out 0.1s;
+                        transition: all ease-in-out 0.1s;
+                        position: relative; }
+                        body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul li i {
+                          position: absolute;
+                          display: block;
+                          width: 120%;
+                          height: 120%;
+                          margin: auto;
+                          top: -20px;
+                          bottom: -20px;
+                          left: -20px;
+                          right: -20px;
+                          -webkit-border-radius: 100px;
+                                  border-radius: 100px;
+                          -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+                                  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+                          -webkit-transition: all ease-in-out 0.1s;
+                          -o-transition: all ease-in-out 0.1s;
+                          transition: all ease-in-out 0.1s; }
+                          body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul li i.dragging {
+                            -webkit-transition: none !important;
+                            -o-transition: none !important;
+                            transition: none !important; }
+                        body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul li.empty i {
+                          opacity: 0; }
+                        body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .mask .items .scroll-y ul li.hit {
+                          -webkit-filter: brightness(1.3);
+                                  filter: brightness(1.3); }
+              body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .btn-box {
+                background-image: url(../img/../img/box.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 56px;
+                left: 10px;
+                right: 0;
+                margin: auto;
+                width: 160px;
+                height: 100px;
+                z-index: 999 !important;
+                -webkit-transform: translateZ(10px);
+                        transform: translateZ(10px); }
+                body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .btn-box:hover {
+                  -webkit-transform: scale(1.1) translateZ(10px) !important;
+                          transform: scale(1.1) translateZ(10px) !important;
+                  -webkit-filter: brightness(1.1);
+                          filter: brightness(1.1); }
+                body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .btn-box:active {
+                  -webkit-transform: scale(1.05) translateZ(10px) !important;
+                          transform: scale(1.05) translateZ(10px) !important;
+                  -webkit-filter: brightness(1.05);
+                          filter: brightness(1.05); }
+                body#soft main #soft-pages .soft-current-page #hud-include .box-scaled .box .btn-box.open {
+                  background-image: url(../img/../img/box-open.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .clone-item-drag {
+            position: absolute;
+            -webkit-border-radius: 300px;
+                    border-radius: 300px;
+            z-index: 99999;
+            -webkit-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                    transform-origin: 0 0;
+            cursor: -webkit-grab;
+            cursor: grab;
+            opacity: 0;
+            visibility: 0;
+            -webkit-filter: brightness(1.1);
+                    filter: brightness(1.1); }
+            body#soft main #soft-pages .soft-current-page #hud-include .clone-item-drag i {
+              position: absolute;
+              display: block;
+              width: 120%;
+              height: 120%;
+              margin: auto;
+              top: -20px;
+              bottom: -20px;
+              left: -20px;
+              right: -20px;
+              -webkit-border-radius: 100px;
+                      border-radius: 100px;
+              -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+                      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2); }
+          body#soft main #soft-pages .soft-current-page #hud-include .finais-decifrar-os-codigos-da-inteligencia i {
+            background-image: url(../img/../img/items-drag/finais-decifrar-os-codigos-da-inteligencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .finais-eu-no-comando i {
+            background-image: url(../img/../img/items-drag/finais-eu-no-comando.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .finais-mentes-brilhantes i {
+            background-image: url(../img/../img/items-drag/finais-mentes-brilhantes.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .infantil-diversidade i {
+            background-image: url(../img/../img/items-drag/infantil-diversidade.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .infantil-respeito i {
+            background-image: url(../img/../img/items-drag/infantil-respeito.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .infantil-socializacao i {
+            background-image: url(../img/../img/items-drag/infantil-socializacao.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .infantil-unicas-e-especiais i {
+            background-image: url(../img/../img/items-drag/infantil-unicas-e-especiais.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .iniciais-caracteristicas-saudaveis i {
+            background-image: url(../img/../img/items-drag/iniciais-caracteristicas-saudaveis.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .iniciais-se-relacionar-de-forma-saudavel i {
+            background-image: url(../img/../img/items-drag/iniciais-se-relacionar-de-forma-saudavel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .iniciais-combinados-de-convivencia i {
+            background-image: url(../img/../img/items-drag/iniciais-combinados-de-convivencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .iniciais-pensamento-critico i {
+            background-image: url(../img/../img/items-drag/iniciais-pensamento-critico.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .iniciais-se-libertar-das-armadilhas-da-mente i {
+            background-image: url(../img/../img/items-drag/iniciais-se-libertar-das-armadilhas-da-mente.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-corresponsabilidade-inevitavel i {
+            background-image: url(../img/../img/items-drag/medio-corresponsabilidade-inevitavel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-busca-pela-identidade i {
+            background-image: url(../img/../img/items-drag/medio-busca-pela-identidade.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-sejamos-protagonistas i {
+            background-image: url(../img/../img/items-drag/medio-sejamos-protagonistas.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-escolhas-profissionais i {
+            background-image: url(../img/../img/items-drag/medio-escolhas-profissionais.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-gerenciar-emocoes i {
+            background-image: url(../img/../img/items-drag/medio-gerenciar-emocoes.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .medio-lideranca i {
+            background-image: url(../img/../img/items-drag/medio-lideranca.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled {
+            top: 0 !important;
+            left: 100% !important; }
+            body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav {
+              background-color: #A1E2B2;
+              position: absolute;
+              top: 400px;
+              right: 535px;
+              width: 116px;
+              height: 68px;
+              border: 3px solid #fff;
+              -webkit-transform: skewX(-5deg);
+                  -ms-transform: skewX(-5deg);
+                      transform: skewX(-5deg);
+              margin-right: -200px; }
+              body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav .btn {
+                position: absolute;
+                pointer-events: all; }
+                body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav .btn.inactive {
+                  -webkit-filter: saturate(0.3);
+                          filter: saturate(0.3);
+                  opacity: 0.7; }
+                body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav .btn.btn-prev {
+                  background-image: url(../img/../img/btn-nav-prev.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  top: 2px;
+                  left: 3px;
+                  width: 45px;
+                  height: 45px;
+                  z-index: 1; }
+                body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav .btn.btn-next {
+                  background-image: url(../img/../img/btn-nav-next.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  top: 10px;
+                  left: 50px;
+                  width: 65px;
+                  height: 55px; }
+              body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav.prev-only {
+                width: 50px;
+                height: 51px; }
+                body#soft main #soft-pages .soft-current-page #hud-include .nav-scaled .nav.prev-only .btn-next {
+                  display: none; }
+        body#soft main #soft-pages .soft-current-page .items-scaled {
+          z-index: 999999;
+          pointer-events: none; }
+          body#soft main #soft-pages .soft-current-page .items-scaled .items-drag {
+            pointer-events: all;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .empty, body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .item-drag {
+              position: absolute;
+              width: 92px;
+              height: 92px;
+              -webkit-border-radius: 200px;
+                      border-radius: 200px; }
+            body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .empty {
+              background-color: #E3A640;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              border: 2px dashed #fff; }
+            body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .item-drag {
+              background-size: 100% 100% !important; }
+              body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .item-drag.drag {
+                z-index: 99999 !important; }
+            body#soft main #soft-pages .soft-current-page .items-scaled .items-drag .drop {
+              pointer-events: none !important;
+              opacity: 0;
+              visibility: hidden;
+              position: absolute;
+              width: 0 !important;
+              height: 0 !important;
+              top: 0 !important;
+              left: 0 !important; }
+        body#soft main #soft-pages .soft-current-page#splash-screen {
+          background-color: #fff; }
+          body#soft main #soft-pages .soft-current-page#splash-screen .ei-logo {
+            background-image: url(../img/../img/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 250px;
+            max-height: 100px;
+            width: 25%;
+            height: 15%;
+            margin: auto;
+            -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                    transform: scale(0); }
+        body#soft main #soft-pages .soft-current-page#cover {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title {
+            background-image: url(../img/../img/cover/bg-title.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            top: -65%;
+            bottom: 0;
+            left: 30%;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title h1 {
+              font-family: AptiferSansLTPro-Black, 'Arial', sans-serif;
+              color: #F1B91B;
+              text-transform: uppercase;
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              top: 25%;
+              font-size: 95px;
+              line-height: 90px; }
+              body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title h1 span {
+                font-family: AptiferSansLTPro-Light, 'Arial', sans-serif;
+                display: block;
+                font-size: 95px;
+                line-height: 90px;
+                color: inherit; }
+            body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title .btn-start {
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #E7FCEE;
+              font-size: 45px;
+              position: absolute;
+              bottom: 95px;
+              width: 255px;
+              margin: auto;
+              left: 30px;
+              right: 0;
+              height: 80px; }
+              body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title .btn-start i {
+                background-image: url(../img/../img/cover/airplane.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                width: 85px;
+                height: 85px;
+                margin-left: 20px;
+                margin-bottom: -32px; }
+            body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .title .btn-help {
+              background-image: url(../img/../img/cover/btn-help.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              bottom: 72px;
+              right: 70px; }
+          body#soft main #soft-pages .soft-current-page#cover .wrap-scaled .ei-logo {
+            background-image: url(../img/../img/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 6%;
+            left: -webkit-calc(30% - 20px);
+            left: calc(30% - 20px);
+            right: 0;
+            width: 250px;
+            height: 100px;
+            margin: auto;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                    transform: scale(1.5); }
+          body#soft main #soft-pages .soft-current-page#cover .mila {
+            background-image: url(../img/../img/cover/mila.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center bottom;
+            position: absolute;
+            bottom: -30%;
+            right: 50%;
+            left: -10%;
+            margin: auto;
+            width: 50%;
+            height: 90%;
+            opacity: 0;
+            visibility: hidden; }
+        body#soft main #soft-pages .soft-current-page#avatar {
+          background-image: url(../img/../img/avatar/texture-bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: 150px;
+          background-repeat: repeat;
+          background-color: #A1E2B2; }
+          body#soft main #soft-pages .soft-current-page#avatar .title-scaled {
+            left: 0 !important;
+            z-index: 1; }
+            body#soft main #soft-pages .soft-current-page#avatar .title-scaled .title {
+              background-image: url(../img/../img/avatar/bg-title.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center right;
+              position: absolute;
+              width: 65%;
+              height: 85%;
+              top: 5%;
+              bottom: 0;
+              left: -85%;
+              right: 0;
+              margin: auto; }
+              body#soft main #soft-pages .soft-current-page#avatar .title-scaled .title h1 {
+                font-family: AptiferSansLTPro-Black, 'Arial', sans-serif;
+                text-transform: uppercase;
+                position: absolute;
+                width: 80%;
+                text-align: center;
+                top: 25%;
+                left: 18%;
+                font-size: 75px;
+                line-height: 70px; }
+                body#soft main #soft-pages .soft-current-page#avatar .title-scaled .title h1 span {
+                  font-family: AptiferSansLTPro-Light, 'Arial', sans-serif;
+                  display: block;
+                  font-size: 75px;
+                  line-height: 70px; }
+              body#soft main #soft-pages .soft-current-page#avatar .title-scaled .title p {
+                position: absolute;
+                top: 50%;
+                font-size: 25px;
+                width: 65%;
+                left: 170px;
+                text-align: center;
+                line-height: 30px; }
+            body#soft main #soft-pages .soft-current-page#avatar .title-scaled .ei-logo {
+              background-image: url(../img/../img/logo.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              bottom: 22%;
+              left: -77%;
+              right: 0;
+              width: 200px;
+              height: 60px;
+              margin: auto; }
+          body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled {
+            left: 36% !important;
+            top: 40% !important; }
+            body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .border-bg {
+              background-image: url(../img/../img/avatar/border-bg.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              width: 210%;
+              height: 200%;
+              left: -50%;
+              top: -75%;
+              margin-left: -520px; }
+            body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars {
+              position: absolute;
+              top: 190px;
+              left: 63%;
+              width: 48%; }
+              body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul {
+                text-align: center; }
+                body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar {
+                  background-image: url(../img/../img/avatar/bg-avatar-box.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  display: inline-block;
+                  width: 28%;
+                  height: 200px;
+                  margin: 15px;
+                  position: relative;
+                  top: 150px;
+                  opacity: 0;
+                  visibility: hidden; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar i {
+                    width: 100%;
+                    height: 120%;
+                    display: block;
+                    position: relative;
+                    top: -71px;
+                    left: 15px;
+                    -webkit-transform: rotate(2deg);
+                        -ms-transform: rotate(2deg);
+                            transform: rotate(2deg);
+                    pointer-events: none; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-1 i {
+                    background-image: url(../img/../img/avatar/avatar-1.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-2 i {
+                    background-image: url(../img/../img/avatar/avatar-2.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-3 i {
+                    background-image: url(../img/../img/avatar/avatar-3.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-4 i {
+                    background-image: url(../img/../img/avatar/avatar-4.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-5 i {
+                    background-image: url(../img/../img/avatar/avatar-5.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.avatar-6 i {
+                    background-image: url(../img/../img/avatar/avatar-6.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .avatars ul li.btn-avatar.selected {
+                    background-image: url(../img/../img/avatar/bg-avatar-box-selected.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    pointer-events: none;
+                    -webkit-filter: brightness(1.1);
+                            filter: brightness(1.1); }
+            body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .btn-next {
+              background-image: url(../img/../img/avatar/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              bottom: -60px;
+              right: 85px;
+              width: 250px;
+              height: 110px;
+              text-align: center;
+              line-height: 110px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 35px;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-transform: scale(1.5);
+                  -ms-transform: scale(1.5);
+                      transform: scale(1.5);
+              opacity: 0;
+              visibility: hidden; }
+              body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .btn-next.inactive {
+                background-image: url(../img/../img/avatar/btn-next-inactive.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                color: #86B1B0; }
+              body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .btn-next:hover {
+                background-image: url(../img/../img/avatar/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#avatar .avatars-scaled .btn-next:active {
+                background-image: url(../img/../img/avatar/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#avatar #hud-include .soft-scaled {
+            display: none; }
+          body#soft main #soft-pages .soft-current-page#avatar #hud-include .nav-scaled {
+            display: block; }
+        body#soft main #soft-pages .soft-current-page#intro {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .partner-school {
+            position: absolute;
+            width: 575px;
+            height: 220px;
+            top: 185px;
+            left: 365px;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                    transform: scale(1.5); }
+            body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .partner-school.origin {
+              -webkit-transform-origin: 96% -60%;
+                  -ms-transform-origin: 96% -60%;
+                      transform-origin: 96% -60%; }
+            body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .partner-school .board-bg {
+              background-image: url(../img/../img/intro/board-bg.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-size: 100% 100%;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              -webkit-transform: skew(3deg, 3deg) rotate(0.1deg);
+                  -ms-transform: skew(3deg, 3deg) rotate(0.1deg);
+                      transform: skew(3deg, 3deg) rotate(0.1deg); }
+            body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .partner-school .school-logo {
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              width: 80%;
+              height: 80%;
+              margin: auto;
+              top: -5px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              -webkit-transform: skew(3deg, 3deg) rotate(0.1deg);
+                  -ms-transform: skew(3deg, 3deg) rotate(0.1deg);
+                      transform: skew(3deg, 3deg) rotate(0.1deg); }
+          body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .mask {
+            position: absolute;
+            bottom: 200px;
+            right: 55px;
+            overflow: hidden;
+            width: 400px;
+            height: 110px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .mask .btn-next {
+              background-image: url(../img/../img/intro/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 30px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .mask .btn-next::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 200px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .mask .btn-next:hover {
+                background-image: url(../img/../img/intro/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#intro .wrap-scaled .mask .btn-next:active {
+                background-image: url(../img/../img/intro/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#intro #hud-include .soft-scaled {
+            display: none; }
+          body#soft main #soft-pages .soft-current-page#intro #hud-include .avatar-scaled {
+            display: block; }
+          body#soft main #soft-pages .soft-current-page#intro #hud-include .nav-scaled {
+            display: block; }
+        body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .wrap-scaled .mask {
+            position: absolute;
+            bottom: 360px;
+            right: 55px;
+            overflow: hidden;
+            width: 400px;
+            height: 110px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .wrap-scaled .mask .btn-next {
+              background-image: url(../img/../img/a-escola-da-inteligencia/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 26px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .wrap-scaled .mask .btn-next::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 200px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .wrap-scaled .mask .btn-next:hover {
+                background-image: url(../img/../img/a-escola-da-inteligencia/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .wrap-scaled .mask .btn-next:active {
+                background-image: url(../img/../img/a-escola-da-inteligencia/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag {
+            z-index: 999;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars {
+              background-image: url(../img/../img/a-escola-da-inteligencia/empty-frame.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              width: 554px;
+              height: 501px;
+              top: 146px;
+              left: 591px;
+              opacity: 0;
+              -webkit-transition: all ease-in-out 0.2s;
+              -o-transition: all ease-in-out 0.2s;
+              transition: all ease-in-out 0.2s; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars.show {
+                opacity: 1;
+                pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars.no-bg {
+                background: none !important;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar {
+                position: absolute; }
+                body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar.escola {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/escola.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 153px;
+                  height: 184px;
+                  top: 24px;
+                  left: 172px; }
+                body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar.familia {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/familia.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 121px;
+                  height: 155px;
+                  top: 94px;
+                  left: 350px; }
+                body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar.estudante {
+                  background-image: url(../img/../img/a-escola-da-inteligencia/estudante.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  width: 125px;
+                  height: 159px;
+                  top: 333px;
+                  left: 132px; }
+                body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar.drag {
+                  z-index: 99999 !important; }
+                body#soft main #soft-pages .soft-current-page#a-escola-da-inteligencia .pillars-drag .pillars .btn-pillar.hit {
+                  pointer-events: none !important;
+                  opacity: 0;
+                  visibility: hidden; }
+        body#soft main #soft-pages .soft-current-page#educacao-socioemocional {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#educacao-socioemocional .wrap-scaled .mask {
+            position: absolute;
+            bottom: 170px;
+            right: 55px;
+            overflow: hidden;
+            width: 400px;
+            height: 110px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#educacao-socioemocional .wrap-scaled .mask .btn-next {
+              background-image: url(../img/../img/a-escola-da-inteligencia/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 26px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#educacao-socioemocional .wrap-scaled .mask .btn-next::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 200px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#educacao-socioemocional .wrap-scaled .mask .btn-next:hover {
+                background-image: url(../img/../img/a-escola-da-inteligencia/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#educacao-socioemocional .wrap-scaled .mask .btn-next:active {
+                background-image: url(../img/../img/a-escola-da-inteligencia/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#curso-da-familia {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .btn-link {
+            background-image: url(../img/../img/curso-da-familia/btn-link.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 250px;
+            left: 760px;
+            width: 210px;
+            height: 220px;
+            opacity: 0;
+            visibility: hidden; }
+          body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask {
+            position: absolute;
+            bottom: 160px;
+            right: 55px;
+            overflow: hidden;
+            width: 500px;
+            height: 250px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-later {
+              background-image: url(../img/../img/curso-da-familia/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 130px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 26px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-later::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-later:hover {
+                background-image: url(../img/../img/curso-da-familia/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-later:active {
+                background-image: url(../img/../img/curso-da-familia/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+            body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-video {
+              background-image: url(../img/../img/curso-da-familia/btn-video.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 30px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-video::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 200px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-video:hover {
+                background-image: url(../img/../img/curso-da-familia/btn-video-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-video:active {
+                background-image: url(../img/../img/curso-da-familia/btn-video-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+            body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-next {
+              background-image: url(../img/../img/curso-da-familia/btn-next.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 150px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 26px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-next::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 200px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-next:hover {
+                background-image: url(../img/../img/curso-da-familia/btn-next-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#curso-da-familia .wrap-scaled .mask .btn-next:active {
+                background-image: url(../img/../img/curso-da-familia/btn-next-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#segments {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.items-completed::before {
+              background-image: url(../img/../img/segments/check-icon.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              display: block;
+              content: "";
+              position: absolute; }
+            body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.infantil {
+              background-image: url(../img/../img/segments/btn-segment-infantil.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 120px;
+              height: 28px;
+              top: 297px;
+              left: 444px; }
+              body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.infantil.items-completed::before {
+                width: 25px;
+                height: 25px;
+                top: -10px;
+                left: 105px; }
+            body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.iniciais {
+              background-image: url(../img/../img/segments/btn-segment-iniciais.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 121px;
+              height: 29px;
+              top: 296px;
+              left: 717px; }
+              body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.iniciais.items-completed::before {
+                width: 25px;
+                height: 25px;
+                top: -10px;
+                right: 105px; }
+            body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.finais {
+              background-image: url(../img/../img/segments/btn-segment-finais.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 174px;
+              height: 40px;
+              top: 255px;
+              left: 805px; }
+              body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.finais.items-completed::before {
+                width: 32px;
+                height: 32px;
+                right: 154px;
+                top: -13px; }
+            body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.medio {
+              background-image: url(../img/../img/segments/btn-segment-medio.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 174px;
+              height: 40px;
+              top: 255px;
+              left: 301px; }
+              body#soft main #soft-pages .soft-current-page#segments .wrap-scaled .btn-segment.medio.items-completed::before {
+                width: 32px;
+                height: 32px;
+                left: 154px;
+                top: -13px; }
+        body#soft main #soft-pages .soft-current-page#segment-infantil {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters {
+            position: absolute;
+            width: 715px;
+            height: 240px;
+            top: 225px;
+            left: 480px;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters::before {
+              background-image: url(../img/../img/segment-infantil/fade-scroll.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-size: 100% 100%;
+              display: block;
+              content: "";
+              pointer-events: none;
+              position: fixed;
+              width: 720px;
+              height: 230px;
+              z-index: 1;
+              left: 389px;
+              right: -3px;
+              margin: auto; }
+            body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul {
+              white-space: nowrap;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character {
+                position: relative;
+                display: inline-block;
+                width: 210px;
+                margin: 0 10px;
+                text-align: center;
+                padding: 10px 0;
+                -webkit-filter: grayscale(1) brightness(10);
+                        filter: grayscale(1) brightness(10);
+                min-width: 210px; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character:last-child {
+                  padding-right: 15px; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character:hover {
+                  -webkit-filter: grayscale(0) brightness(1.1);
+                          filter: grayscale(0) brightness(1.1); }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character i {
+                  display: block;
+                  width: 110px;
+                  height: 110px;
+                  margin: 0 auto 10px; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character p {
+                  white-space: initial;
+                  line-height: 18px;
+                  color: #fff; }
+                  body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character p span {
+                    font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+                    text-transform: uppercase;
+                    color: inherit;
+                    padding-bottom: 4px;
+                    display: inline-block; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.corujao i {
+                  background-image: url(../img/../img/segment-infantil/corujao.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.saca i {
+                  background-image: url(../img/../img/segment-infantil/saca.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.toto i {
+                  background-image: url(../img/../img/segment-infantil/toto.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.baba i {
+                  background-image: url(../img/../img/segment-infantil/baba.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.tata i {
+                  background-image: url(../img/../img/segment-infantil/tata.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.cantor i {
+                  background-image: url(../img/../img/segment-infantil/cantor.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.pepe i {
+                  background-image: url(../img/../img/segment-infantil/pepe.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .characters ul li.btn-character.digala i {
+                  background-image: url(../img/../img/segment-infantil/digala.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .btn-ei-link {
+            background-image: url(../img/../img/segment-infantil/btn-ei-link.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 201px;
+            left: 683px;
+            width: 518px;
+            height: 271px;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .btn-ei-link:hover {
+              -webkit-filter: saturate(1.8);
+                      filter: saturate(1.8);
+              -webkit-transform: scale(1.04);
+                  -ms-transform: scale(1.04);
+                      transform: scale(1.04); }
+            body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .btn-ei-link:active {
+              -webkit-transform: scale(1.02);
+                  -ms-transform: scale(1.02);
+                      transform: scale(1.02); }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask {
+            position: absolute;
+            bottom: 90px;
+            right: 55px;
+            overflow: hidden;
+            width: 480px;
+            height: 110px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask .btn {
+              background-image: url(../img/../img/segment-infantil/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 27px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask .btn::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask .btn:hover {
+                background-image: url(../img/../img/segment-infantil/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask .btn:active {
+                background-image: url(../img/../img/segment-infantil/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .mask .btn.btn-back-segments {
+                padding-top: 20px;
+                line-height: 25px;
+                font-size: 22px; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .infantil-socializacao {
+            top: 153px;
+            left: 526px; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .infantil-unicas-e-especiais {
+            top: 472px;
+            left: 622px; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .infantil-respeito {
+            top: 80px;
+            left: 872px; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .infantil-diversidade {
+            top: 485px;
+            left: 931px; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .item-drag.infantil-socializacao {
+            background-image: url(../img/../img/items-drag/infantil-socializacao.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .item-drag.infantil-unicas-e-especiais {
+            background-image: url(../img/../img/items-drag/infantil-unicas-e-especiais.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .item-drag.infantil-respeito {
+            background-image: url(../img/../img/items-drag/infantil-respeito.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-infantil .wrap-scaled .items-drag .item-drag.infantil-diversidade {
+            background-image: url(../img/../img/items-drag/infantil-diversidade.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#segment-iniciais {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .btn-ei-play-link {
+            background-image: url(../img/../img/segment-iniciais/btn-ei-play-link.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 315px;
+            left: 523px;
+            width: 190px;
+            height: 64px;
+            opacity: 0;
+            visibility: hidden; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask {
+            position: absolute;
+            bottom: 60px;
+            right: 55px;
+            overflow: hidden;
+            width: 480px;
+            height: 500px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask .btn {
+              background-image: url(../img/../img/segment-iniciais/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 170px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 27px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask .btn::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask .btn:hover {
+                background-image: url(../img/../img/segment-iniciais/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask .btn:active {
+                background-image: url(../img/../img/segment-iniciais/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .mask .btn.btn-back-segments {
+                padding-top: 20px;
+                line-height: 25px;
+                font-size: 22px;
+                top: 380px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .iniciais-se-relacionar-de-forma-saudavel {
+            top: 172px;
+            left: 841px;
+            width: 140px;
+            height: 140px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .iniciais-caracteristicas-saudaveis {
+            top: 403px;
+            left: 119px;
+            width: 140px;
+            height: 140px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .iniciais-combinados-de-convivencia {
+            top: 541px;
+            left: 895px;
+            width: 140px;
+            height: 140px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .iniciais-pensamento-critico {
+            top: 83px;
+            left: 574px;
+            width: 140px;
+            height: 140px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .iniciais-se-libertar-das-armadilhas-da-mente {
+            top: 155px;
+            left: 82px;
+            width: 140px;
+            height: 140px; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .item-drag.iniciais-se-relacionar-de-forma-saudavel {
+            background-image: url(../img/../img/items-drag/iniciais-se-relacionar-de-forma-saudavel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .item-drag.iniciais-caracteristicas-saudaveis {
+            background-image: url(../img/../img/items-drag/iniciais-caracteristicas-saudaveis.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .item-drag.iniciais-combinados-de-convivencia {
+            background-image: url(../img/../img/items-drag/iniciais-combinados-de-convivencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .item-drag.iniciais-pensamento-critico {
+            background-image: url(../img/../img/items-drag/iniciais-pensamento-critico.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-iniciais .wrap-scaled .items-drag .item-drag.iniciais-se-libertar-das-armadilhas-da-mente {
+            background-image: url(../img/../img/items-drag/iniciais-se-libertar-das-armadilhas-da-mente.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#segment-finais {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .btn-pij-link {
+            background-image: url(../img/../img/segment-finais/btn-pij-link.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 290px;
+            left: 470px;
+            width: 322px;
+            height: 256px;
+            opacity: 0;
+            visibility: hidden; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .btn-pij-facebook {
+            background-image: url(../img/../img/segment-finais/btn-pij-facebook.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 341px;
+            left: 379px;
+            width: 86px;
+            height: 86px;
+            opacity: 0;
+            visibility: hidden; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .btn-pij-instagram {
+            background-image: url(../img/../img/segment-finais/btn-pij-instagram.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 340px;
+            left: 511px;
+            width: 88px;
+            height: 88px;
+            opacity: 0;
+            visibility: hidden; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask {
+            position: absolute;
+            bottom: 100px;
+            right: 55px;
+            overflow: hidden;
+            width: 480px;
+            height: 410px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-continue {
+              background-image: url(../img/../img/segment-finais/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 27px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-continue::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-continue:hover {
+                background-image: url(../img/../img/segment-finais/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-continue:active {
+                background-image: url(../img/../img/segment-finais/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+            body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-pij-continue {
+              background-image: url(../img/../img/segment-finais/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 110px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 27px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-pij-continue::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-pij-continue:hover {
+                background-image: url(../img/../img/segment-finais/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-pij-continue:active {
+                background-image: url(../img/../img/segment-finais/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+            body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-back-segments {
+              background-image: url(../img/../img/segment-finais/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 290px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all;
+              padding-top: 20px;
+              line-height: 25px;
+              font-size: 22px; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-back-segments::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-back-segments:hover {
+                background-image: url(../img/../img/segment-finais/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .mask .btn-back-segments:active {
+                background-image: url(../img/../img/segment-finais/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .finais-decifrar-os-codigos-da-inteligencia {
+            top: 202px;
+            left: 347px;
+            width: 150px;
+            height: 150px; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .finais-mentes-brilhantes {
+            top: 441px;
+            left: 222px;
+            width: 150px;
+            height: 150px; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .finais-eu-no-comando {
+            top: 444px;
+            left: 773px;
+            width: 149px;
+            height: 149px; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .item-drag.finais-decifrar-os-codigos-da-inteligencia {
+            background-image: url(../img/../img/items-drag/finais-decifrar-os-codigos-da-inteligencia.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .item-drag.finais-mentes-brilhantes {
+            background-image: url(../img/../img/items-drag/finais-mentes-brilhantes.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-finais .wrap-scaled .items-drag .item-drag.finais-eu-no-comando {
+            background-image: url(../img/../img/items-drag/finais-eu-no-comando.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#segment-medio {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .btn-pij-link {
+            background-image: url(../img/../img/segment-medio/btn-pij-link.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 172px;
+            left: 832px;
+            width: 292px;
+            height: 186px;
+            opacity: 0;
+            visibility: hidden; }
+            body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .btn-pij-link:hover {
+              -webkit-filter: none;
+                      filter: none; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask {
+            position: absolute;
+            bottom: 80px;
+            right: 55px;
+            overflow: hidden;
+            width: 480px;
+            height: 110px;
+            pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask .btn {
+              background-image: url(../img/../img/segment-medio/btn.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 10px;
+              right: -230px;
+              width: 200px;
+              height: 90px;
+              text-align: center;
+              line-height: 90px;
+              font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+              text-transform: uppercase;
+              color: #2F4A3C;
+              font-size: 27px;
+              -webkit-transform: none !important;
+                  -ms-transform: none !important;
+                      transform: none !important;
+              -webkit-filter: none !important;
+                      filter: none !important;
+              -webkit-box-sizing: border-box;
+                 -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+              pointer-events: all; }
+              body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask .btn::after {
+                position: absolute;
+                content: "";
+                top: 45px;
+                left: 195px;
+                width: 300px;
+                height: 3px;
+                background-color: #fff;
+                pointer-events: none; }
+              body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask .btn:hover {
+                background-image: url(../img/../img/segment-medio/btn-hover.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask .btn:active {
+                background-image: url(../img/../img/segment-medio/btn-active.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .mask .btn.btn-back-segments {
+                padding-top: 20px;
+                line-height: 25px;
+                font-size: 22px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-lideranca {
+            top: 71px;
+            left: 535px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-busca-pela-identidade {
+            top: 194px;
+            left: 394px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-gerenciar-emocoes {
+            top: 387px;
+            left: 450px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-escolhas-profissionais {
+            top: 431px;
+            left: 688px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-corresponsabilidade-inevitavel {
+            top: 81px;
+            left: 855px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .medio-sejamos-protagonistas {
+            top: 415px;
+            left: 901px;
+            width: 106px;
+            height: 106px; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-lideranca {
+            background-image: url(../img/../img/items-drag/medio-lideranca.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-busca-pela-identidade {
+            background-image: url(../img/../img/items-drag/medio-busca-pela-identidade.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-gerenciar-emocoes {
+            background-image: url(../img/../img/items-drag/medio-gerenciar-emocoes.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-escolhas-profissionais {
+            background-image: url(../img/../img/items-drag/medio-escolhas-profissionais.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-corresponsabilidade-inevitavel {
+            background-image: url(../img/../img/items-drag/medio-corresponsabilidade-inevitavel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          body#soft main #soft-pages .soft-current-page#segment-medio .wrap-scaled .items-drag .item-drag.medio-sejamos-protagonistas {
+            background-image: url(../img/../img/items-drag/medio-sejamos-protagonistas.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+        body#soft main #soft-pages .soft-current-page#backpacks {
+          background-image: url(../img/../img/bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: cover; }
+          body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled:before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 3px solid #fff; }
+          body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .shelves {
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 600px; }
+            body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .shelves .shelf {
+              background-image: url(../img/../img/backpacks/shelf.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 100%;
+              height: 100px;
+              position: absolute; }
+              body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .shelves .shelf.shelf-2 {
+                top: 300px; }
+          body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 500px; }
+            body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul {
+              text-align: center; }
+              body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack {
+                display: inline-block;
+                width: 150px;
+                height: 200px;
+                margin: 50px 45px;
+                -webkit-box-sizing: border-box;
+                   -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                padding-top: 195px;
+                position: relative; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack .item {
+                  position: absolute;
+                  width: 30px;
+                  height: 30px;
+                  -webkit-border-radius: 100px;
+                          border-radius: 100px;
+                  -webkit-transition: all ease-in-out 0.1s;
+                  -o-transition: all ease-in-out 0.1s;
+                  transition: all ease-in-out 0.1s; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack .item.empty {
+                    background-color: #E3A640;
+                    -webkit-box-sizing: border-box;
+                       -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                    border: 1px dashed #fff; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack .item i {
+                    display: block;
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    -webkit-border-radius: 100px;
+                            border-radius: 100px;
+                    margin: auto;
+                    top: -10px;
+                    bottom: -10px;
+                    left: -10px;
+                    right: -10px;
+                    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+                            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+                    -webkit-transform: scale(2);
+                        -ms-transform: scale(2);
+                            transform: scale(2);
+                    opacity: 0;
+                    visibility: hidden; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil {
+                  background-image: url(../img/../img/backpacks/infantil.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-diversidade {
+                    top: 100px;
+                    left: 10px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-diversidade i {
+                      background-image: url(../img/../img/items-drag/infantil-diversidade.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-respeito {
+                    top: 145px;
+                    left: 20px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-respeito i {
+                      background-image: url(../img/../img/items-drag/infantil-respeito.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-socializacao {
+                    top: 90px;
+                    left: 100px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-socializacao i {
+                      background-image: url(../img/../img/items-drag/infantil-socializacao.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-unicas-e-especiais {
+                    top: 140px;
+                    left: 100px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.infantil .infantil-unicas-e-especiais i {
+                      background-image: url(../img/../img/items-drag/infantil-unicas-e-especiais.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais {
+                  background-image: url(../img/../img/backpacks/iniciais.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-caracteristicas-saudaveis {
+                    top: 60px;
+                    left: 20px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-caracteristicas-saudaveis i {
+                      background-image: url(../img/../img/items-drag/iniciais-caracteristicas-saudaveis.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-se-relacionar-de-forma-saudavel {
+                    top: 45px;
+                    left: 60px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-se-relacionar-de-forma-saudavel i {
+                      background-image: url(../img/../img/items-drag/iniciais-se-relacionar-de-forma-saudavel.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-combinados-de-convivencia {
+                    top: 65px;
+                    left: 90px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-combinados-de-convivencia i {
+                      background-image: url(../img/../img/items-drag/iniciais-combinados-de-convivencia.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-pensamento-critico {
+                    top: 142px;
+                    left: 35px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-pensamento-critico i {
+                      background-image: url(../img/../img/items-drag/iniciais-pensamento-critico.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-se-libertar-das-armadilhas-da-mente {
+                    top: 145px;
+                    left: 85px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.iniciais .iniciais-se-libertar-das-armadilhas-da-mente i {
+                      background-image: url(../img/../img/items-drag/iniciais-se-libertar-das-armadilhas-da-mente.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais {
+                  background-image: url(../img/../img/backpacks/finais.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-decifrar-os-codigos-da-inteligencia {
+                    top: 20px;
+                    left: 70px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-decifrar-os-codigos-da-inteligencia i {
+                      background-image: url(../img/../img/items-drag/finais-decifrar-os-codigos-da-inteligencia.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-eu-no-comando {
+                    top: 75px;
+                    left: 20px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-eu-no-comando i {
+                      background-image: url(../img/../img/items-drag/finais-eu-no-comando.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-mentes-brilhantes {
+                    top: 75px;
+                    left: 100px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.finais .finais-mentes-brilhantes i {
+                      background-image: url(../img/../img/items-drag/finais-mentes-brilhantes.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio {
+                  background-image: url(../img/../img/backpacks/medio.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-busca-pela-identidade {
+                    top: 20px;
+                    left: 30px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-busca-pela-identidade i {
+                      background-image: url(../img/../img/items-drag/medio-busca-pela-identidade.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-corresponsabilidade-inevitavel {
+                    top: 75px;
+                    left: 100px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-corresponsabilidade-inevitavel i {
+                      background-image: url(../img/../img/items-drag/medio-corresponsabilidade-inevitavel.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-escolhas-profissionais {
+                    top: 80px;
+                    left: 10px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-escolhas-profissionais i {
+                      background-image: url(../img/../img/items-drag/medio-escolhas-profissionais.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-gerenciar-emocoes {
+                    top: 15px;
+                    left: 75px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-gerenciar-emocoes i {
+                      background-image: url(../img/../img/items-drag/medio-gerenciar-emocoes.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-lideranca {
+                    top: 60px;
+                    left: 55px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-lideranca i {
+                      background-image: url(../img/../img/items-drag/medio-lideranca.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                  body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-sejamos-protagonistas {
+                    top: 120px;
+                    left: 60px; }
+                    body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack.medio .medio-sejamos-protagonistas i {
+                      background-image: url(../img/../img/items-drag/medio-sejamos-protagonistas.png);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: contain; }
+                body#soft main #soft-pages .soft-current-page#backpacks .wrap-scaled .backpacks ul li.backpack p {
+                  background-color: #fff;
+                  font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+                  display: inline-block;
+                  padding: 1px 6px 0;
+                  position: relative;
+                  -webkit-transform: rotate(1deg);
+                      -ms-transform: rotate(1deg);
+                          transform: rotate(1deg);
+                  -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+                          box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+          body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons {
+            background-image: url(../img/../img/backpacks/bg-share-buttons.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: 100% 100%;
+            position: absolute;
+            top: -10px;
+            right: 200px;
+            width: 240px;
+            height: 110px;
+            text-align: center;
+            pointer-events: all; }
+            body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons::after {
+              position: absolute;
+              content: "";
+              top: 55px;
+              left: 235px;
+              width: 200px;
+              height: 3px;
+              background-color: #fff;
+              pointer-events: none; }
+            body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons a {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              margin: 33px 10px 0; }
+              body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons a.facebook {
+                background-image: url(../img/../img/backpacks/btn-facebook.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons a.whatsapp {
+                background-image: url(../img/../img/backpacks/btn-whatsapp.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+              body#soft main #soft-pages .soft-current-page#backpacks #hud-include .box-scaled .share-buttons a.twitter {
+                background-image: url(../img/../img/backpacks/btn-twitter.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain; }
+    body#soft main .overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99999;
+      opacity: 0;
+      visibility: hidden; }
+      body#soft main .overlay .wrap-scaled .box {
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        border: 10px solid #fff;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden; }
+        body#soft main .overlay .wrap-scaled .box .btn-close {
+          position: absolute;
+          top: -30px;
+          right: -30px;
+          border: 3px solid #fff;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 47px;
+          font-size: 50px;
+          background-color: #F2781F;
+          color: #fff;
+          z-index: 999; }
+        body#soft main .overlay .wrap-scaled .box .text {
+          padding: 12px 25px 2px;
+          max-height: 600px;
+          width: 750px; }
+          body#soft main .overlay .wrap-scaled .box .text h3 {
+            font-family: AptiferSansLTPro-Bold, 'Arial', sans-serif;
+            text-transform: uppercase;
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px; }
+            body#soft main .overlay .wrap-scaled .box .text h3 b {
+              font-family: AptiferSansLTPro-Black, 'Arial', sans-serif;
+              font-size: inherit; }
+          body#soft main .overlay .wrap-scaled .box .text p {
+            margin: 15px 0;
+            font-size: 20px;
+            line-height: 30px; }
+        body#soft main .overlay .wrap-scaled .box #external-video {
+          width: 1158px;
+          height: 652px;
+          display: block; }
+        body#soft main .overlay .wrap-scaled .box .iframe {
+          width: 1050px;
+          height: 695px; }
+          body#soft main .overlay .wrap-scaled .box .iframe iframe {
+            width: 700px;
+            height: 463px;
+            -webkit-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                    transform: scale(1.5);
+            -webkit-transform-origin: 0% 0%;
+                -ms-transform-origin: 0% 0%;
+                    transform-origin: 0% 0%; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-track {
+  background: #eee;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa; }

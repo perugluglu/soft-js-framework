@@ -2,8 +2,8 @@ body#soft.invert-color {
   -webkit-filter: invert(1);
           filter: invert(1); }
 
-body#soft.events-none {
-  pointer-events: none; }
+body#soft.events-none, body#soft.events-none * {
+  pointer-events: none !important; }
 
 body#soft .soft-inactive {
   pointer-events: none !important; }
