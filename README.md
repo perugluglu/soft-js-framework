@@ -1,7 +1,7 @@
 ![](https://bitbucket.org/peruglugluinteractive/20200627-softjs-framework/raw/3c8e48d6b5b79dde8d9ceec8f52715aab7800b98/src/soft-lib/assets/img/softjs-framework.png)
 
-# Soft.js - v1.1.3
-### Última atualização: 14/09/2020
+# Soft.js - v2.0.0
+### Última atualização: 12/01/2021
 
 ...
 
@@ -127,7 +127,7 @@ var softPage = {
     
     2 - Formato: [Array e {Object}]. Inclui o include na página. Se o 'holder' estiver vazio, o include ficará diretamente no elemento da página. IMPORTANTE: Nunca deixe a propriedade 'includeID' vazia ('');*/
 
-    pageStatus: 'active',
+    pageStatus: 'inactive',
     // Qualquer valor diferente de 'inactive' habilita a página para navegação.
 
     pageInMethod: 'theme.pagina1()',
@@ -570,6 +570,55 @@ soft.changeLanguage('pt-br');
 > **Importante**: O parâmetro ('pt-br') passado na função deve ser criado dentro de '**languageClass**', assim como toda sua estrutura obrigatória em **soft-content.js**.
 
 > **Importante**: Se a função for chamada com o parâmetro vazio ou inexistente, o idioma passará a ser o padrão setado dentro de **defaultLanguage** em **soft-config.js** e por padrão será exibida uma mensagem de _warning_ no console: "_**Idioma não encontrado.**_" Essa mensagem está pré-setada dentro de '**languageNotFound**' em **soft-content.js**.
+
+...
+
+### **soft.getPageStatus();**
+
+Usado para retornar o status das páginas da aplicação.
+
+Sintaxe:
+```javascript
+soft.getPageStatus(page);
+```
+
+Entradas suportadas:
+```javascript
+Integer (pageIndex) / String (pageId)
+```
+
+Exemplo de aplicação:
+```javascript
+soft.getPageStatus('cover'); // Retorna o status da página com ID 'cover'
+    
+soft.getPageStatus(3); // Retorna o status da página de index '3'
+```
+
+...
+
+### **soft.setPageStatus();**
+
+Usado para desbloquear as páginas da aplicação de acordo com a navegação.
+Em **soft-content.js**, na lista de páginas no objeto **contentPages**, por padrão, deixamo o parâmetro **pageStatus** como **inactive**. Desta forma, não é possível acessar essa página, mesmo forçando pelo navegador.
+
+Sintaxe:
+```javascript
+soft.setPageStatus(page, status);
+```
+
+Entradas suportadas:
+```javascript
+Integer (pageIndex) / String (pageId), String ('active' / 'inactive')
+```
+
+Exemplo de aplicação:
+```javascript
+soft.setPageStatus('cover', 'active'); // Desbloqueia a página com ID 'cover'
+    
+soft.setPageStatus(3, 'active'); // Desbloqueia a página de index '3'
+```
+
+> **Importante**: É altamente recomendável que o **pageStatus** das páginas da aplicação tenham o valor **inactive**, alterando dentro do código de acordo o progresso ou necessidade. Isso evita o usuário acessar sem permissão.
 
 ...
 
@@ -1182,6 +1231,22 @@ https://scorm.com/scorm-explained/technical-scorm/run-time/run-time-reference
 
 ## Change log ##
 ---
+- ### 2.0.0 ###
+
+    
+
+- ### 1.1.5 ###
+
+    - Implementação dos métodos **soft.getPageStatus()** e **soft.setPageStatus()**.
+
+    - À partir de agora, o **page.js** não possui mais o parâmetro **pageStatus**. Isso foi incluído na lista de páginas em **soft-content.js**.
+
+- ### 1.1.4 ###
+
+    - Correção de bug no **contentGlobal.includes**.
+
+    - Ajuste no SASS da class **events-none** para bloquear o evento em todos os elementos.
+
 - ### 1.1.3 ###
 
     - Melhorias no método **soft.pageBuild()** para diminuir o tempo de troca de tela.
